@@ -1,0 +1,32 @@
+{
+   "DC":{
+      "zenoss-a":[
+         {
+            "Node1":{
+               "server_name":"mon050",
+               "ip":"172.23.59.218"
+            }
+         },
+         {
+            "Node2":{
+               "server_name":"mon051",
+               "ip":"172.23.59.219"
+            }
+         }
+      ],
+      "zenoss-b":[
+         {
+            "Node1":{
+               "server_name":"mon150",
+               "ip":"172.23.66.189"
+            }
+         },
+         {
+            "Node2":{
+               "server_name":"mon151",
+               "ip":"172.23.66.190"
+            }
+         }
+      ]
+   }
+}
