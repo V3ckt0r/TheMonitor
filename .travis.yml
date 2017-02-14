@@ -8,4 +8,5 @@ install: "pip install -r requirements.txt"
 
 # command to run tests
 script:
-  - python TheMonitor/test/themonitor_test.py
+  - ls
+  - python Themonitor/test/themonitor_test.py
