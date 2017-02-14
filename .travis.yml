@@ -6,6 +6,10 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 
+#set environmet variables
+env:
+  - PYTHONPATH=$TRAVIS_BUILD_DIR/themonitor
+
 # command to run tests
 script:
   - pwd
