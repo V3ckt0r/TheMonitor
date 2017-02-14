@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/V3ckt0r/TheMonitor.svg?branch=master)](https://travis-ci.org/V3ckt0r/TheMonitor)
 ##The Monitor
 
 The Monitor is an app to help you determine operational logistics of Zenoss Resource Manager.
