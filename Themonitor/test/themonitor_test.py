@@ -1,6 +1,11 @@
 import unittest
 import os
-from Themonitor import themonitor
+import sys
+
+# Add source home into python path and import themonitor.py
+mypath = os.path.abspath('..')
+sys.path.insert(0,mypath)
+import themonitor
 
 class ThemonitorTestCase(unittest.TestCase):
     def setUp(self):
