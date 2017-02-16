@@ -15,3 +15,8 @@ script:
   - cd Themonitor/test
   - ls
   - python themonitor_test.py
+
+# Codeclimate intergration
+addons:
+    code_climate:
+        repo_token: 0cf52b1a0165a1a1a53755c46adc96a3f57de0faed571e9cd771b9dd3727dabf
