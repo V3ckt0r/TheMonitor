@@ -4,7 +4,7 @@ import sys
 from coverage import coverage
 
 # initialise coverage, this might need amending depending on your environment
-cov = coverage(branch=True, omit=['flask/*', 'themonitor_test.py', '/Library/*'])
+cov = coverage(branch=True, omit=['flask/*', 'themonitor_test.py', '/Library/*', '/home/travis/virtualenv'])
 cov.start()
 
 # Add source home into python path and import themonitor.py
