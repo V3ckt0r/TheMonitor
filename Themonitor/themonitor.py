@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for
 from flask_restful import Resource, Api
 import dns.resolver
 import json
-
+from os import path
 
 app = Flask(__name__)
 api = Api(app)
@@ -29,8 +29,9 @@ def lookup():
 
 def nslookup():
     data = None
+    unittest_mypath = path.join(path.dirname(__file__), 'server_lists')
 
-    with open('./server_lists/stage') as server_list:
+    with open(unittest_mypath +'/stage') as server_list:
         data = json.load(server_list)
 
     resolve = dns.resolver.query('zenoss.stage.tools.bbc.co.uk')

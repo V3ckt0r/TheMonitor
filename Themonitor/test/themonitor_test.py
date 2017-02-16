@@ -15,9 +15,13 @@ class ThemonitorTestCase(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_site(self):
+    def test_index(self):
         rv = self.app.get('/')
         assert "The Monitor" in rv.data
+
+    def test_lookup(self):
+        rv = self.app.get('/lookup')
+        assert "stage.tools.bbc.co.uk" in rv.data
 
 if __name__ == '__main__':
     unittest.main()
