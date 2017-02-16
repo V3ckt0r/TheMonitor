@@ -3,7 +3,7 @@ import os
 import sys
 from coverage import coverage
 
-# initialise coverage
+# initialise coverage, this might need amending depending on your environment
 cov = coverage(branch=True, omit=['flask/*', 'themonitor_test.py', '/Library/*'])
 cov.start()
 
